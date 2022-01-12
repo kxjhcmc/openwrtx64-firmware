@@ -16,8 +16,8 @@
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 # 使用官方ppp 2.4.9
-rm -rf package/network/services/ppp
-svn co https://github.com/Ljzkirito/openwrt-packages/trunk/ppp package/network/services/ppp
+#rm -rf package/network/services/ppp
+#svn co https://github.com/Ljzkirito/openwrt-packages/trunk/ppp package/network/services/ppp
 #svn co https://github.com/openwrt/openwrt/trunk/package/network/services/ppp package/network/services/ppp
 # Add luci-theme-argon
 rm -rf package/lean/luci-theme-argon
