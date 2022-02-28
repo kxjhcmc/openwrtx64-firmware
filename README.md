@@ -1,7 +1,9 @@
 打开自己编译目录，先和大屌源码同步一下
+
  git pull
  ./scripts/feeds update -a
  ./scripts/feeds install -a
+ 
 然后执行 make menuconfig 选好后执行
 
 make defconfig
