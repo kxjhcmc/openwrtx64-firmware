@@ -1,3 +1,13 @@
+打开自己编译目录，先和大屌源码同步一下
+ git pull
+ ./scripts/feeds update -a
+ ./scripts/feeds install -a
+然后执行 make menuconfig 选好后执行
+
+make defconfig
+./scripts/diffconfig.sh > seed.config
+这样配置的差异部分就写入seed.config这个文件了
+
 # Actions-OpenWrt
 
 [![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/P3TERX/Actions-OpenWrt/blob/master/LICENSE)
