@@ -18,9 +18,9 @@ sed -i 's/192.168.1.1/192.168.0.1/g' package/base-files/files/bin/config_generat
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
 
 # 总是拉取官方golang版本，避免xray&v2ray编译错误
-pushd feeds/packages/lang
-rm -fr golang && svn co https://github.com/openwrt/packages/trunk/lang/golang
-popd
+#pushd feeds/packages/lang
+#rm -fr golang && svn co https://github.com/openwrt/packages/trunk/lang/golang
+#popd
 
 # 修改 argon 为默认主题,不再集成luci-theme-bootstrap主题
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
