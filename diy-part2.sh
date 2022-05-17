@@ -25,8 +25,8 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 # 修改 argon 为默认主题,不再集成luci-theme-bootstrap主题
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
-# 更新miniupnp版本
-#rm -fr feeds/packages/net/miniupnpd
-#svn co https://github.com/Ljzkirito/openwrt-packages/trunk/miniupnpd feeds/packages/net/miniupnpd
-#rm -fr feeds/luci/applications/luci-app-upnp
-#svn co https://github.com/Ljzkirito/openwrt-packages/trunk/luci-app-upnp feeds/luci/applications/luci-app-upnp
+# 更新miniupnp版本r
+m -fr feeds/packages/net/miniupnpd
+svn co https://github.com/Ljzkirito/openwrt-packages/trunk/miniupnpd feeds/packages/net/miniupnpd
+rm -fr feeds/luci/applications/luci-app-upnp
+svn co https://github.com/Ljzkirito/openwrt-packages/trunk/luci-app-upnp feeds/luci/applications/luci-app-upnp
